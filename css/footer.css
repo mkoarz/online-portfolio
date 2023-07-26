@@ -1,0 +1,17 @@
+footer {
+  display: grid;
+  padding-top: 50px;
+  text-align: center;
+}
+.contact-container{
+  word-spacing: 10px;
+}
+.contact-container .fa {
+  color: whitesmoke;
+}
+.no-copyrights{
+  word-spacing: normal;
+  padding-top: 20px;
+  font-size: .5em;
+  color: whitesmoke;
+}
