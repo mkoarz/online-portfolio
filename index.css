@@ -1,0 +1,84 @@
+/*body*/
+.rowone {
+    display: flex;
+    height: 90vh;
+    column-gap: 5px;
+}
+.space {
+    width: 15vw;
+}
+.profile-container {
+    display: flex;
+    width: 30vw;
+    align-items: center;
+}
+.information-container {
+    width: 40vw;
+}
+.profile-container img.profile {
+    display: flex;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    margin: auto;
+    border: solid;
+}
+.information-container {
+    display: grid;
+    align-content: center;
+}
+.hello {
+    font-size: 3em;
+    font-weight: bold;
+}
+.about-me {
+    font-size: 2em;
+}
+.info {
+    font-size: 1em;
+    font-style: italic;
+}
+
+/*mobile*/
+@media only screen and (max-width: 1024px){
+    .space {
+        width: 0;
+    }
+    .profile-container {
+        width: 40vw;
+    }
+    .information-container {
+        width: 60vw;
+    }
+    .information-container p {
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .information-container p.info{
+        font-size: 15px;
+    }
+    .information-container p.about-me{
+        font-size: 1em;
+    }
+    .profile-container,
+    .information-container
+     {
+        width: 100vw;
+    }
+    .information-container {
+        margin-top: 30px;
+    }
+    .rowone {
+        display: block;
+        text-align: center;
+        height: 92vh;
+    }
+    .information-container p {
+        padding-right: 0;
+    }
+    .profile-container img.profile {
+        margin-top: 20px;
+    }
+}
